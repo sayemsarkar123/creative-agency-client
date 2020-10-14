@@ -4,16 +4,16 @@ import './AdminServiceList.css'
 const AdminServiceList = () => {
   const [serviceListItems, setServiceListItems] = useState([])
   useEffect(() => {
-    fetch('http://localhost:4000/getAllOrders')
+    fetch('https://evening-meadow-35328.herokuapp.com/getAllOrders')
       .then((response) => response.json())
       .then((result) => setServiceListItems(result))
   }, [])
   const changeStatus = ({ target: { value: statusValue } }, id) => {
-    fetch(`http://localhost:4000/getOrder/${id}`)
+    fetch(`https://evening-meadow-35328.herokuapp.com/getOrder/${id}`)
       .then((response) => response.json())
       .then((result) => {
         if (result) {
-          fetch('http://localhost:4000/updateOrderStatus', {
+          fetch('https://evening-meadow-35328.herokuapp.com/updateOrderStatus', {
             method: 'PATCH',
             body: JSON.stringify({ ...result, status: statusValue }),
             headers: {

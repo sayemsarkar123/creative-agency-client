@@ -6,7 +6,7 @@ const UserServiceList = () => {
   const [userLog, setUserLog] = useContext(LoginContext)
   const [serviceListItems, setServiceListItems] = useState([])
   useEffect(() => {
-    fetch(`http://localhost:4000/getOrdersByEmail/?email=${userLog.email}`)
+    fetch(`https://evening-meadow-35328.herokuapp.com/getOrdersByEmail/?email=${userLog.email}`)
       .then((response) => response.json())
       .then((result) => setServiceListItems(result))
   }, [])

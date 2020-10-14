@@ -10,12 +10,12 @@ const Dashboard = () => {
   const [userRole, setUserRole] = useState(false)
   const [userLog, setUserLog] = useContext(LoginContext)
   useEffect(() => {
-    fetch(`http://localhost:4000/checkUserRole/?email=${userLog.email}`)
+    fetch(`https://evening-meadow-35328.herokuapp.com/checkUserRole/?email=${userLog.email}`)
       .then((response) => response.json())
       .then((result) => setUserRole(result))
   }, [userLog])
   useEffect(() => {
-    fetch(`http://localhost:4000/getService/${id}`)
+    fetch(`https://evening-meadow-35328.herokuapp.com/getService/${id}`)
       .then((response) => response.json())
       .then((result) => setService(result))
   }, [id])

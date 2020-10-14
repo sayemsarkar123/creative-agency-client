@@ -11,7 +11,7 @@ const AddService = () => {
     formData.append('title', title)
     formData.append('description', description)
     formData.append('icon', icon[0])
-    fetch(`http://localhost:4000/addService`, {
+    fetch(`https://evening-meadow-35328.herokuapp.com/addService`, {
       method: 'POST',
       body: formData,
     })

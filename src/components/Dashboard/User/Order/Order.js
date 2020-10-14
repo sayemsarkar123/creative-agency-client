@@ -25,7 +25,7 @@ const Order = ({ service: { title: serviceTitle } }) => {
     formData.append('price', price)
     formData.append('status', 'Pending')
     formData.append('projectFile', projectFile[0])
-    fetch(`http://localhost:4000/addOrder`, {
+    fetch(`https://evening-meadow-35328.herokuapp.com/addOrder`, {
       method: 'POST',
       body: formData,
     })

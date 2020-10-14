@@ -6,7 +6,7 @@ const Review = () => {
   const [userLog, setUserLog] = useContext(LoginContext)
   const { register, handleSubmit, errors } = useForm()
   const onSubmit = (data) => {
-    fetch('http://localhost:4000/addFeedback', {
+    fetch('https://evening-meadow-35328.herokuapp.com/addFeedback', {
       method: 'POST',
       body: JSON.stringify({ ...data, picture: userLog.picture }),
       headers: {
