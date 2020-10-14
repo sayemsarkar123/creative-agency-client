@@ -1,0 +1,44 @@
+.blog-shadow-dreamy {
+  transition: 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.blog-shadow-dreamy:hover {
+    box-shadow: 0 1px 2px rgba(0,0,0,0.07),
+                0 2px 4px rgba(0,0,0,0.07),
+                0 4px 8px rgba(0,0,0,0.07),
+                0 8px 16px rgba(0,0,0,0.07),
+                0 16px 32px rgba(0,0,0,0.07),
+                0 32px 64px rgba(0,0,0,0.07);
+}
+
+.blog-shadow-dreamy::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  background: rgb(250, 208, 98, 0.8);
+  border-radius: 50%;
+  transform: translate(50%, -50%);
+  transition: 0.3s ease;
+  z-index: -1;
+}
+
+.blog-shadow-dreamy:hover::before {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    transform: translate(0, 0);
+}
+
+.blog-shadow-dreamy img {
+  transition: 0.3s ease;
+}
+
+.blog-shadow-dreamy:hover img {
+  transform: rotate(360deg);
+}

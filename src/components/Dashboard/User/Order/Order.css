@@ -1,0 +1,12 @@
+.inputfile {
+  display: none !important;
+}
+
+.inputfile-label {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  color: #009444;
+  background-color: #deffed;
+  border: 1px solid #009444;
+}

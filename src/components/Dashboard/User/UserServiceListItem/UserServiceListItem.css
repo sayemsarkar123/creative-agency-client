@@ -1,0 +1,18 @@
+.success-bg {
+ background: #c5ffdf;
+}
+.success-text {
+ color: #009444;
+}
+.danger-bg {
+ background: #ffe3e3;
+}
+.danger-text {
+ color: #ff4545;
+}
+.warning-bg {
+ background: #ffce6e66;
+}
+.warning-text {
+ color:  #ffce6e;
+}
