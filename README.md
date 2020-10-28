@@ -5,4 +5,4 @@ ___
 
 ##### Technology Used : React.js, React Bootstrap, Node.js, Express.js, MongoDB, Firebase Authentication
 \
-[Website](https://creative-agency-2020.web.app/) | [Resume](https://drive.google.com/file/d/1glAZTxGi0fT7dcWymtLVImHUR6ZkIAHD/view?usp=sharing)
+[Website](https://creative-agency-2020.web.app/) / [Resume](https://drive.google.com/file/d/1glAZTxGi0fT7dcWymtLVImHUR6ZkIAHD/view?usp=sharing)
